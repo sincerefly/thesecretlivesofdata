@@ -29,7 +29,7 @@ define(["../model/log_entry"], function (LogEntry) {
         .after(100, wait).indefinite()
         .after(100, function () {
             frame.snapshot();
-            model().subtitle = '<h2>让我们从更高的层次来概括一下它是如何工作的。</h2>'
+            model().subtitle = '<h2>让我们从更高的层级来概括一下它是如何工作的。</h2>'
                            + model().controls.html();
             layout.invalidate();
         })
@@ -47,7 +47,7 @@ define(["../model/log_entry"], function (LogEntry) {
         .after(100, function () {
             frame.snapshot();
             node("b")._state = "follower";
-            model().subtitle = '<h2><em>Follower(追随者)</em> 状态,</h2>'
+            model().subtitle = '<h2><em>追随者(Follower)</em> 状态,</h2>'
                            + model().controls.html();
             layout.invalidate();
         })
@@ -55,7 +55,7 @@ define(["../model/log_entry"], function (LogEntry) {
         .after(100, function () {
             frame.snapshot();
             node("b")._state = "candidate";
-            model().subtitle = '<h2><em>Candidate(候选人)</em> 状态,</h2>'
+            model().subtitle = '<h2><em>候选人(Candidate)</em> 状态,</h2>'
                            + model().controls.html();
             layout.invalidate();
         })
@@ -63,7 +63,7 @@ define(["../model/log_entry"], function (LogEntry) {
         .after(100, function () {
             frame.snapshot();
             node("b")._state = "leader";
-            model().subtitle = '<h2>或是 <em>Leader(领导)</em> 状态.</h2>'
+            model().subtitle = '<h2>或是 <em>领导(Leader)</em> 状态.</h2>'
                            + model().controls.html();
             layout.invalidate();
         })
@@ -128,7 +128,7 @@ define(["../model/log_entry"], function (LogEntry) {
         .after(100, wait).indefinite()
         .after(100, function () {
             frame.snapshot();
-            model().subtitle = '<h2>这个过程称为 <em>Leader Election(领导者选举)</em>。</h2>'
+            model().subtitle = '<h2>这个过程称为 <em>领导者选举(Leader Election)</em>。</h2>'
                            + model().controls.html();
             layout.invalidate();
         })
@@ -184,7 +184,7 @@ define(["../model/log_entry"], function (LogEntry) {
                 node("c")._log.push(new LogEntry(model(), 1, 1, "SET 5"));
                 layout.invalidate();
             });
-            model().subtitle = '<h2>要提交条目，节点首先将其复制到跟随节点...</h2>'
+            model().subtitle = '<h2>要提交条目，节点首先将其复制到追随节点...</h2>'
                            + model().controls.html();
             layout.invalidate();
         })
@@ -242,7 +242,7 @@ define(["../model/log_entry"], function (LogEntry) {
 
         .after(300, function () {
             frame.snapshot();
-            model().subtitle = '<h2>此过程称为<em>日志复制</em>。</h2>'
+            model().subtitle = '<h2>此过程称为<em>日志复制(Log Replication)</em>。</h2>'
                            + model().controls.html();
             layout.invalidate();
         })

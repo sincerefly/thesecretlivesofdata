@@ -20,7 +20,7 @@ define([], function () {
         })
 
         .after(1000, function () {
-            frame.model().title = '<h2 style="visibility:visible">那么什么是分布式共识？</h2>'
+            frame.model().title = '<h2 style="visibility:visible">什么是分布式共识？</h2>'
                         + '<h3 style="visibility:hidden;">让我们从一个例子开始...</h3>'
                         + '<br/>' + frame.model().controls.html();
             layout.invalidate();
@@ -101,7 +101,7 @@ define([], function () {
         })
         .after(100, wait).indefinite()
         .after(100, function () {
-            frame.model().subtitle = '<h3>达成 agreement(协议)，或 <em>consensus(共识)</em>, 对于一个值来说很容易.</h3>'
+            frame.model().subtitle = '<h3>达成协议(agreement)，或 <em>共识(consensus)</em>, 对于一个值来说很容易.</h3>'
                            + frame.model().controls.html();
             layout.invalidate();
         })
@@ -110,7 +110,7 @@ define([], function () {
 
         .after(100, function () {
             frame.snapshot();
-            frame.model().subtitle = '<h3>但是，如果我们有多个节点，我们如何达成共识？</h3>'
+            frame.model().subtitle = '<h3>但是，如果我们有多个节点，应该如何达成共识？</h3>'
                            + frame.model().controls.html();
             layout.invalidate();
         })
@@ -127,7 +127,7 @@ define([], function () {
 
         .after(100, function () {
             frame.snapshot();
-            frame.model().subtitle = '<h3>这就是 <em>distributed consensus(分布式共识)</em> 问题.</h3>'
+            frame.model().subtitle = '<h3>这就是 <em>分布式共识(distributed consensus)</em> 问题。</h3>'
                            + frame.model().controls.html();
             layout.invalidate();
         })
