@@ -22,7 +22,7 @@ define([], function () {
             layout.invalidate();
         })
         .after(500, function () {
-            frame.model().title = '<h2 style="visibility:visible">Leader Election(领导人选举)</h1>'
+            frame.model().title = '<h2 style="visibility:visible">领导人选举(Leader Election)</h1>'
                                 + '<br/>' + frame.model().controls.html();
             layout.invalidate();
         })
@@ -53,7 +53,7 @@ define([], function () {
         })
         .after(model().electionTimeout / 2, function() { model().controls.show(); })
         .after(100, function () {
-            subtitle('<h2>首先是 <span style="color:green">election timeout(选举超时)</span>。</h2>');
+            subtitle('<h2>首先是 <span style="color:green">选举超时(election timeout)</span>。</h2>');
         })
         .after(1, function() {
             subtitle('<h2>选举超时是追随者等待成为候选人的时间。</h2>');
@@ -72,7 +72,7 @@ define([], function () {
             return (event.target.state() === "candidate");
         })
         .after(1, function () {
-            subtitle('<h2>选举超时后，追随者成为候选人并开始新的<em>election term(选举任期)</em>...</h2>');
+            subtitle('<h2>选举超时后，追随者成为候选人并开始新的<em>选举任期(election term)</em>...</h2>');
         })
         .after(1, function () {
             subtitle('<h2>...为自己投票...</h2>');
@@ -98,13 +98,13 @@ define([], function () {
             subtitle('<h2>一旦候选人获得多数票，他就会成为领导者。</h2>');
         })
         .after(model().defaultNetworkLatency * 0.25, function () {
-            subtitle('<h2>领导者开始向其追随者发送<em>Append Entries(附加条目)</em>消息。</h2>');
+            subtitle('<h2>领导者开始向其追随者发送<em>附加条目(Append Entries)</em>消息。</h2>');
         })
         .after(1, function () {
-            subtitle('<h2>这些消息按照<span style="color:red">heartbeat timeout(心跳超时)</span>指定的时间间隔发送。</h2>');
+            subtitle('<h2>这些消息按照<span style="color:red">心跳超时(heartbeat timeout)</span>指定的时间间隔发送。</h2>');
         })
         .after(model().defaultNetworkLatency, function () {
-            subtitle('<h2>然后追随者回复每条<em>Append Entries(附加条目)</em>消息。</h2>');
+            subtitle('<h2>然后追随者回复每条<em>附加条目(Append Entries)</em>消息。</h2>');
         })
         .after(1, function () {
             subtitle('', false);

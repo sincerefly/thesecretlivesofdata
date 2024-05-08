@@ -24,7 +24,7 @@ define([], function () {
             layout.invalidate();
         })
         .after(500, function () {
-            frame.model().title = '<h2 style="visibility:visible">Log Replication(日志复制)</h1>'
+            frame.model().title = '<h2 style="visibility:visible">日志复制(Log Replication)</h1>'
                                 + '<br/>' + frame.model().controls.html();
             layout.invalidate();
         })
@@ -57,7 +57,7 @@ define([], function () {
         })
         .then(wait).indefinite()
         .then(function () {
-            subtitle('<h2>这是通过使用与检测信号相同的<em>Append Entries(追加条目)</em>消息来完成的。</h2>', false);
+            subtitle('<h2>这是通过使用与检测信号相同的<em>追加条目(Append Entries)</em>消息来完成的。</h2>', false);
         })
         .then(wait).indefinite()
         .then(function () {
@@ -91,7 +91,7 @@ define([], function () {
             }
         })
         .after(model().defaultNetworkLatency * 0.25, function(event) {
-            subtitle('<h2>...并将响应发送给客户端.</h2>');
+            subtitle('<h2>...并将响应发送给客户端。</h2>');
         })
         .after(1, clear)
         .after(model().defaultNetworkLatency, function(event) {
@@ -161,7 +161,7 @@ define([], function () {
         .after(1, wait).indefinite()
         .after(1, function () {
             client("Y").send(node("B"), "SET 3");
-            subtitle('<h2>一个客户端将尝试将节点 B 的值设置为“3”。</h2>', false);
+            subtitle('<h2>一个客户端将尝试将节点 B 的值设置为 “3”。</h2>', false);
         })
         .after(1, wait).indefinite()
         .after(1, function () {
@@ -171,7 +171,7 @@ define([], function () {
         .after(1, function () {
             var leader = model().leader(["C", "D", "E"]);
             client("X").send(leader, "SET 8");
-            subtitle('<h2>另一个客户端将尝试设置节点的值从 ' + leader.id + ' 变为 "8".</h2>', false);
+            subtitle('<h2>另一个客户端将尝试设置节点的值从 ' + leader.id + ' 变为 “8”。</h2>', false);
         })
         .after(1, wait).indefinite()
         .after(1, function () {

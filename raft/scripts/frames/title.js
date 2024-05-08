@@ -15,7 +15,7 @@ define([], function () {
 
         .after(500, function () {
             frame.model().title = '<h1 style="visibility:visible">Raft</h1>'
-                        + '<h2 style="visibility:visible">Understandable Distributed Consensus(易于理解的分布式共识)</h2>'
+                        + '<h2 style="visibility:visible">易于理解的分布式共识(Understandable Distributed Consensus)</h2>'
                         + '<br/>' + frame.model().controls.html();
             layout.invalidate();
         })
