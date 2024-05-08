@@ -18,7 +18,7 @@ Data visualization knowledge is not necessary -- just the desire to spread some 
 Below is a list of data visualizations and their associated Github issue.
 Please report any bugs you find or any suggestions you have for how to make these visualizations more understandable.
 
-1. [Raft: Understandable Distributed Consensus](http://thesecretlivesofdata.com/raft) ([#1](https://github.com/benbjohnson/thesecretlivesofdata/issues/1))
+1. [Raft: 易于理解的分布式共识](http://thesecretlivesofdata.com/raft) ([#1](https://github.com/benbjohnson/thesecretlivesofdata/issues/1))
 
 2. Apache Kafka ([#4](https://github.com/benbjohnson/thesecretlivesofdata/issues/4)) - *Planning*
 

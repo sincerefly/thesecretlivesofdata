@@ -7,11 +7,11 @@ define(["./playground", "./title", "./intro", "./overview", "./election", "./rep
     function (playground, title, intro, overview, election, replication, conclusion) {
         return function (player) {
             // player.frame("playground", "Playground", playground);
-            player.frame("home", "Home", title);
-            player.frame("intro", "What is Distributed Consensus?", intro);
-            player.frame("overview", "Protocol Overview", overview);
-            player.frame("election", "Leader Election", election);
-            player.frame("replication", "Log Replication", replication);
-            player.frame("conclusion", "Other Resources", conclusion);
+            player.frame("home", "首页", title);
+            player.frame("intro", "什么是分布式共识？", intro);
+            player.frame("overview", "协议概述", overview);
+            player.frame("election", "领导人选举", election);
+            player.frame("replication", "日志复制", replication);
+            player.frame("conclusion", "其他资源", conclusion);
         };
     });
